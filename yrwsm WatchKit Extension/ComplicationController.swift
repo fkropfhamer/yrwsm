@@ -43,17 +43,16 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
         
-        let headerText = "CURRENT HEADER!"
-        let bodyText = "CURRENT TEXT!"
+        let text = getText()
         
         switch complication.family {
         case .graphicRectangular:
-            let template = createGraphicRectangularTemplate(headerText: headerText, bodyText: bodyText)
+            let template = createGraphicRectangularTemplate(headerText: text.header, bodyText: text.body)
             let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             
             handler(entry)
         case .modularLarge:
-            let template = createModularLargeTemplate(headerText: headerText, bodyText: bodyText)
+            let template = createModularLargeTemplate(headerText: text.header, bodyText: text.body)
             let entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
             
             handler(entry)
