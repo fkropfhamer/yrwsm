@@ -32,8 +32,10 @@ struct DisplayText {
 func getText() -> DisplayText {
     let emoji = emojis.randomElement() ?? "😍"
     let header = headers.randomElement() ?? "You are"
-    let body = bodies.randomElement() ?? "awesome"
+    var body = bodies.randomElement() ?? "awesome"
+    body = Bool.random() ? body : body.uppercased()
+    body = body + "! " + emoji
     
     
-    return DisplayText(header: header, body: body + "! " + emoji)
+    return DisplayText(header: header, body: body)
 }

@@ -11,9 +11,9 @@ struct ContentView: View {
     @State private var text = getText()
     
     var body: some View {
-        HStack {
-            Text(text.header)   
-            Text(text.body)
+        VStack {
+            Text(text.toString())
+                .multilineTextAlignment(.center)
             
         }.onTapGesture {
             newText()
