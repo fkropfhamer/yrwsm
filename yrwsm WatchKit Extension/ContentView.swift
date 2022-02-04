@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var text = getText()
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        HStack {
+            Text(text.header)   
+            Text(text.body)
+            
+        }.onTapGesture {
+            newText()
+        }
+    }
+    
+    func newText() {
+        text = getText()
     }
 }
 

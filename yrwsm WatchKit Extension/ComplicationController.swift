@@ -43,8 +43,8 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
         
-        let headerText = "CURRENT HEADER"
-        let bodyText = "CURRENT TEXT"
+        let headerText = "CURRENT HEADER!"
+        let bodyText = "CURRENT TEXT!"
         
         switch complication.family {
         case .graphicRectangular:

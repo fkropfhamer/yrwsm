@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FCAFBD3B27AD887600D9216C /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAFBD3A27AD887600D9216C /* Text.swift */; };
 		FCCD7067279892BC008029A8 /* yrwsm WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FCCD7066279892BC008029A8 /* yrwsm WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FCCD706C279892BE008029A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCD706B279892BE008029A8 /* Assets.xcassets */; };
 		FCCD7072279892BE008029A8 /* yrwsm WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCCD7071279892BE008029A8 /* yrwsm WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -79,6 +80,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FCAFBD3A27AD887600D9216C /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		FCCD7062279892BC008029A8 /* yrwsm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yrwsm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCD7066279892BC008029A8 /* yrwsm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yrwsm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCCD706B279892BE008029A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FCCD7076279892BE008029A8 /* yrwsmApp.swift */,
+				FCAFBD3A27AD887600D9216C /* Text.swift */,
 				FCCD7078279892BE008029A8 /* ContentView.swift */,
 				FCCD707A279892BE008029A8 /* NotificationController.swift */,
 				FCCD707C279892BE008029A8 /* NotificationView.swift */,
@@ -387,6 +390,7 @@
 				FCCD7079279892BE008029A8 /* ContentView.swift in Sources */,
 				FCCD707F279892BE008029A8 /* ComplicationController.swift in Sources */,
 				FCCD7077279892BE008029A8 /* yrwsmApp.swift in Sources */,
+				FCAFBD3B27AD887600D9216C /* Text.swift in Sources */,
 				FCCD707D279892BE008029A8 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
